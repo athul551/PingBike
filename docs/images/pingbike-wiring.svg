@@ -5,9 +5,9 @@
   <g font-family="Segoe UI,Arial" text-anchor="middle">
     <rect x="375" y="120" width="250" height="180" rx="18" fill="#17283c" stroke="#5ab0ff" stroke-width="3"/>
     <text x="500" y="175" fill="#fff" font-size="25" font-weight="700">ESP32</text>
-    <text x="500" y="207" fill="#b9d8e8" font-size="16">GPIO 4 / 5 · GPS</text>
-    <text x="500" y="236" fill="#b9d8e8" font-size="16">GPIO 16 / 17 · SIM800</text>
-    <text x="500" y="265" fill="#b9d8e8" font-size="16">GPIO 27 · Vibration</text>
+    <text x="500" y="207" fill="#b9d8e8" font-size="16">D4 / D5 · GPS</text>
+    <text x="500" y="236" fill="#b9d8e8" font-size="16">D16 / D17 · SIM800</text>
+    <text x="500" y="265" fill="#b9d8e8" font-size="16">D27 · Vibration</text>
     <g><rect x="70" y="105" width="185" height="75" rx="13" fill="#17283c" stroke="#45e0c1" stroke-width="2"/><text x="162" y="138" fill="#fff" font-size="19">GPS receiver</text><text x="162" y="162" fill="#b9d8e8" font-size="14">TX → 4, RX → 5</text></g>
     <g><rect x="745" y="105" width="185" height="75" rx="13" fill="#17283c" stroke="#ffbd69" stroke-width="2"/><text x="837" y="138" fill="#fff" font-size="19">SIM800 modem</text><text x="837" y="162" fill="#b9d8e8" font-size="14">TX → 16, RX → 17</text></g>
     <g><rect x="70" y="280" width="185" height="75" rx="13" fill="#17283c" stroke="#d58cff" stroke-width="2"/><text x="162" y="313" fill="#fff" font-size="19">Vibration sensor</text><text x="162" y="337" fill="#b9d8e8" font-size="14">OUT → 27</text></g>

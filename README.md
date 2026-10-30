@@ -31,11 +31,11 @@ flowchart LR
 
 | Component | ESP32 connection | Purpose |
 | --- | --- | --- |
-| GPS TX | GPIO 4 (`GPS_RX`) | GPS data into ESP32 |
-| GPS RX | GPIO 5 (`GPS_TX`) | ESP32 data to GPS |
-| SIM800 TX | GPIO 16 (`SIM_RX`) | Modem data into ESP32 |
-| SIM800 RX | GPIO 17 (`SIM_TX`) | ESP32 data to modem |
-| Vibration sensor output | GPIO 27 | Motion detection |
+| GPS TX | D4 (`GPS_RX`) | GPS data into ESP32 |
+| GPS RX | D5 (`GPS_TX`) | ESP32 data to GPS |
+| SIM800 TX | D16 (`SIM_RX`) | Modem data into ESP32 |
+| SIM800 RX | D17 (`SIM_TX`) | ESP32 data to modem |
+| Vibration sensor output | D27 | Motion detection |
 | GPS and SIM800 power | External regulated supplies | Use module-specific voltage/current requirements |
 
 ![PingBike wiring diagram](docs/images/pingbike-wiring.svg)
@@ -93,9 +93,9 @@ The main settings are at the top of [`PingBike.ino`](PingBike.ino):
 
 | Setting | Default | Description |
 | --- | --- | --- |
-| `GPS_RX` / `GPS_TX` | `4` / `5` | ESP32 GPS serial pins |
-| `SIM_RX` / `SIM_TX` | `16` / `17` | ESP32 modem serial pins |
-| `VIBRATION_PIN` | `27` | Vibration sensor input |
+| `GPS_RX` / `GPS_TX` | `D4` / `D5` | ESP32 GPS serial pins |
+| `SIM_RX` / `SIM_TX` | `D16` / `D17` | ESP32 modem serial pins |
+| `VIBRATION_PIN` | `D27` | Vibration sensor input |
 | `ALERT_COOLDOWN` | `30000` ms | Minimum time between alerts while vibration remains active |
 
 ## Troubleshooting
