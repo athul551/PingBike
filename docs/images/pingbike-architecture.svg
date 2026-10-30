@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" role="img" aria-labelledby="title">
+  <title id="title">PingBike system architecture</title>
+  <defs>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#17283c"/><stop offset="1" stop-color="#0d1726"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0l9 3-9 3z" fill="#54d6c0"/></marker>
+  </defs>
+  <rect width="1100" height="430" rx="22" fill="#08111f"/>
+  <text x="50" y="55" fill="#fff" font-family="Segoe UI,Arial" font-size="28" font-weight="700">PingBike data path</text>
+  <g font-family="Segoe UI,Arial" text-anchor="middle">
+    <g transform="translate(55 130)"><rect width="190" height="130" rx="16" fill="url(#card)" stroke="#45e0c1" stroke-width="2"/><text x="95" y="52" fill="#fff" font-size="21" font-weight="700">Sensors</text><text x="95" y="83" fill="#b9d8e8" font-size="16">Vibration + GPS</text><text x="95" y="107" fill="#78a9c2" font-size="14">GPIO / NMEA</text></g>
+    <g transform="translate(340 105)"><rect width="230" height="180" rx="16" fill="url(#card)" stroke="#5ab0ff" stroke-width="3"/><text x="115" y="66" fill="#fff" font-size="24" font-weight="700">ESP32</text><text x="115" y="101" fill="#b9d8e8" font-size="16">Decision engine</text><text x="115" y="130" fill="#78a9c2" font-size="14">Cooldown + location</text><text x="115" y="153" fill="#78a9c2" font-size="14">SMS command parser</text></g>
+    <g transform="translate(665 130)"><rect width="190" height="130" rx="16" fill="url(#card)" stroke="#ffbd69" stroke-width="2"/><text x="95" y="52" fill="#fff" font-size="21" font-weight="700">SIM800</text><text x="95" y="83" fill="#b9d8e8" font-size="16">GSM / SMS</text><text x="95" y="107" fill="#78a9c2" font-size="14">AT commands</text></g>
+    <g transform="translate(920 130)"><rect width="130" height="130" rx="16" fill="url(#card)" stroke="#d58cff" stroke-width="2"/><text x="65" y="52" fill="#fff" font-size="19" font-weight="700">Owner</text><text x="65" y="83" fill="#b9d8e8" font-size="16">SMS</text><text x="65" y="107" fill="#78a9c2" font-size="14">Maps link</text></g>
+  </g>
+  <path d="M245 195h90M570 195h95M855 195h65" stroke="#54d6c0" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M920 285H455v40" fill="none" stroke="#d58cff" stroke-dasharray="8 8" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="675" y="350" fill="#d9b8ff" font-family="Segoe UI,Arial" font-size="16" text-anchor="middle">LOCATION request returns through the same path</text>
+</svg>

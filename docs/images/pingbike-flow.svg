@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="title">
+  <title id="title">PingBike alert flow</title>
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0 0l9 3-9 3z" fill="#45e0c1"/></marker></defs>
+  <rect width="1000" height="300" rx="20" fill="#08111f"/>
+  <text x="45" y="50" fill="#fff" font-family="Segoe UI,Arial" font-size="26" font-weight="700">Alert flow</text>
+  <g font-family="Segoe UI,Arial" text-anchor="middle">
+    <g transform="translate(45 105)"><rect width="160" height="85" rx="14" fill="#17283c" stroke="#45e0c1" stroke-width="2"/><text x="80" y="39" fill="#fff" font-size="18">Vibration</text><text x="80" y="64" fill="#b9d8e8" font-size="14">detected</text></g>
+    <g transform="translate(250 105)"><rect width="160" height="85" rx="14" fill="#17283c" stroke="#5ab0ff" stroke-width="2"/><text x="80" y="39" fill="#fff" font-size="18">Cooldown</text><text x="80" y="64" fill="#b9d8e8" font-size="14">allows alert</text></g>
+    <g transform="translate(455 105)"><rect width="160" height="85" rx="14" fill="#17283c" stroke="#ffbd69" stroke-width="2"/><text x="80" y="39" fill="#fff" font-size="18">Read GPS</text><text x="80" y="64" fill="#b9d8e8" font-size="14">or report no fix</text></g>
+    <g transform="translate(660 105)"><rect width="160" height="85" rx="14" fill="#17283c" stroke="#d58cff" stroke-width="2"/><text x="80" y="39" fill="#fff" font-size="18">Send SMS</text><text x="80" y="64" fill="#b9d8e8" font-size="14">with Maps link</text></g>
+  </g>
+  <path d="M205 147h45M410 147h45M615 147h45" stroke="#45e0c1" stroke-width="4" marker-end="url(#a)"/>
+</svg>
